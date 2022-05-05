@@ -1,0 +1,123 @@
+#grid_sidebar {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    overflow: hidden;
+    width: 96%;
+    margin: 12px 0px;
+    box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.75);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(to right, #434343 0%, black 100%);
+    border-radius: 0px 22px 22px 0px;
+}
+
+#grid_sidebar .aulas_titulo {
+    border-radius: 0px 22px 0px 0px;
+}
+
+#grid_sidebar #cursos_accordion .curso {
+    border-radius: 12px;
+    font-weight: normal;
+    overflow: hidden;
+    width: 93%;
+    margin: 12px auto;
+    box-shadow: 0px 0px 14px -4px rgba(1, 175, 136, 0.75);
+    background-color: #3bb78f;
+    background-color: #3bb78f;
+    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+}
+
+#grid_sidebar .modulos_accordion .modulo {
+    width: 100%;
+}
+
+#grid_sidebar .modulos_accordion .modulo {
+    padding: 0px;
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+    border-radius: 12px;
+    width: 93%;
+    margin: 12px auto;
+    color: #FFF;
+    box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+}
+
+#grid_sidebar .modulos_accordion .modulo_cabecalho .cabecalho_btn {
+    padding: 6px 22px 6px 12px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#grid_sidebar div div button>.btn_rotulo {
+    font-weight: bold;
+    padding: 6px;
+}
+
+#grid_sidebar div .modulo_temas button>.btn_rotulo {
+    font-weight: normal;
+}
+
+#grid_sidebar .modulos_accordion .tema_cabecalho .cabecalho_btn {
+    padding: 6px 22px 6px 32px;
+}
+
+#grid_sidebar .modulos_accordion .tema_cabecalho .cabecalho_btn:after {
+    content: "L";
+    position: absolute;
+    top: 8px;
+    left: 22px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#grid_sidebar .modulos_accordion .temas_accordion>.tema h2 {
+    margin: 0px;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+
+#grid_sidebar .modulos_accordion .tema_aulas a {
+    color: #FFFFFF;
+    position: relative;
+    padding: 12px 6px 12px 48px;
+}
+
+#grid_sidebar .modulos_accordion .tema_aulas a:after {
+    content: "L";
+    position: absolute;
+    top: 4px;
+    left: 32px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#grid_conteudo {
+    padding: 12px;
+    background-color: #FFFFFF;
+    border-radius: 22px;
+    width: 98%;
+    margin: 12px auto;
+    color: #000000;
+    box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+}
+
+#grid_sidebar .modulos_accordion .modulo .tema {
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 2px 0px;
+}
+
+#grid_sidebar .modulos_accordion .modulo .tema:last-child {
+    margin-bottom: 0;
+}
+
+#grid_sidebar .modulos_accordion .modulo_cabecalho .cabecalho_btn:hover,
+#grid_sidebar .modulos_accordion .modulo_cabecalho .cabecalho_btn:focus,
+#grid_sidebar .modulos_accordion .modulo_cabecalho .cabecalho_btn:active {
+    background: none;
+}
+
+#grid_sidebar #cursos_accordion .curso_cabecalho .cabecalho_btn {
+    padding: 20px 22px 20px 22px;
+}
