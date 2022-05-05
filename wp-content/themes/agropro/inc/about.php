@@ -1,6 +1,6 @@
 <!-- about -->
 <?php
-   $about - get_page_by_title('about');
+   $about = get_page_by_title('about');
    if (have_rows('about_itens', $about)) : while(have_rows('about_itens', $about)) : the_row();
 ?>
 <div class="about">
