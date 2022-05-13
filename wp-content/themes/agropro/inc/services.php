@@ -16,7 +16,7 @@
          <div class="col-md-4">
             <div class="services_box_main">
                <div  class="services_box text_align_left">
-                  <figure><img src="<?php the_sub_field('services-img-fir')?>" alt="primeira imagem do servicos"/></figure>
+                  <figure><img src="<?php the_sub_field('services-img-fir')?>" alt="Imagem do servicos"/></figure>
                   <div class="veget">
                      <h3><?php the_sub_field('services-card-title')?></h3>
                      <p><?php the_sub_field('services-card-text')?></p>

@@ -26,7 +26,6 @@ get_header();
 
    <?php include(TEMPLATEPATH . "/inc/about.php"); ?>
    <?php include(TEMPLATEPATH . "/inc/services.php"); ?>
-   <?php include(TEMPLATEPATH . "/inc/services.php"); ?>
 
    <!-- choose -->
    <div class="choose">

@@ -4,45 +4,40 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage text_align_left">
-                     <span>Our</span>
-                     <h2>Latest Blog</h2>
+                     <span>Nossas</span>
+                     <h2>Ultimas noticias</h2>
                   </div>
                </div>
             </div>
             <div class="row">
-               <div class=" col-md-4">
-                  <div class="latest">
-                     <figure><img src="images/news1.jpg" alt="#"/></figure>
-                     <span>15<br>  March</span>
-                     <div class="nostrud">
-                        <h3>Alteration in somer</h3>
-                        <p>has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making iteditors </p>
-                        <a class="read_more" href="news.html">Read More</a>
+               <?php
+                  // PEGADO OS POSTS DO WP
+                  $listaPosts = get_posts([
+                     'posts_per_page' => 3,
+                     'post_type' => 'post',
+                     'orderby' => 'date',
+                     'order' => 'desc'
+                  ]);
+               ?>
+               <?php
+                  //EXIBINDO OS POSTS
+                  foreach ( $listaPosts as &$postAtual ) : 
+               ?>
+                  <div class=" col-md-4">
+                     <div class="latest">
+                        <span>
+                           <?php echo get_the_date( 'd', $postAtual ); ?>
+                           </br>
+                           <?php echo get_the_date( 'M', $postAtual ); ?>
+                        </span>
+                        <img src="<?php the_field('blog-img', $postAtual)?>" alt="Imagem do blog">
+                        <div class="nostrud">
+                           <h2><?php the_field('blog-content', $postAtual)?></h2>
+                           <a href="<?php print get_the_permalink( $postAtual->ID );?>" class="read_more">Leia mais</a>
+                        </div>
                      </div>
                   </div>
-               </div>
-               <div class=" col-md-4">
-                  <div class="latest box_desho">
-                     <figure><img src="images/news2.jpg" alt="#"/></figure>
-                     <span>15<br> March</span>
-                     <div class="nostrud">
-                        <h3>Alteration in somer</h3>
-                        <p>has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making iteditors </p>
-                        <a class="read_more" href="news.html">Read More</a>
-                     </div>
-                  </div>
-               </div>
-              <div class=" col-md-4">
-                  <div class="latest">
-                     <figure><img src="images/news3.jpg" alt="#"/></figure>
-                     <span>15<br> March</span>
-                     <div class="nostrud">
-                        <h3>Alteration in somer</h3>
-                        <p>has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making iteditors </p>
-                        <a class="read_more" href="news.html">Read More</a>
-                     </div>
-                  </div>
-               </div>
+               <?php endforeach; ?>
             </div>
          </div>
       </div>

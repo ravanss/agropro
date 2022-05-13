@@ -848,7 +848,6 @@ ul.email li i {
     background: #fff;
     margin-top: 30px;
 }
-.box_desho {box-shadow: 0 0 38px rgba(2, 3, 8, 0.15);}
 
 .latest figure {
     margin: 0;
@@ -875,6 +874,10 @@ ul.email li i {
 
 .nostrud {
     padding: 20px 15px 0px 15px;
+}
+
+.col-md-4:nth-of-type(2) .nostrud{
+    box-shadow: 0 0 38px rgba(2, 3, 8, 0.15);
 }
 .nostrud p {
     padding-top: 10px;
