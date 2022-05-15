@@ -915,7 +915,7 @@ ul.email li i {
 }
 
 .map-responsive {margin-top: 90px;}
-.main_form .form_control {
+.wpcf7-form .form_control {
     padding: 0 20px;
     margin-bottom: 30px;
     width: 100%;
@@ -927,7 +927,7 @@ ul.email li i {
     border: #6b7908 solid 3px;
 }
 
-.main_form .textarea {
+.wpcf7-form textarea {
     margin-bottom: 40px;
     width: 100%;
     background: #fff;
@@ -942,7 +942,7 @@ ul.email li i {
 
 .group_btn {display: flex; justify-content: center;}
 
-.main_form .send_btn {
+.wpcf7-form .send_btn {
     font-size: 20px;
     transition: ease-in all 0.5s;
     background-color: #323232;
@@ -958,7 +958,7 @@ ul.email li i {
     border-radius: 10px;
 }
 
-.main_form .send_btn:hover {
+.wpcf7-form .send_btn:hover {
     background-color: #6b7908;
     transition: ease-in all 0.5s;
     color: #fff;
