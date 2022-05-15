@@ -1,4 +1,4 @@
-      <!-- news -->
+      <!-- ULTIMOS POSTS DO SITE PARA A HOME-->
       <div class="news">
          <div class="container">
             <div class="row">
@@ -18,8 +18,6 @@
                      'orderby' => 'date',
                      'order' => 'desc'
                   ]);
-               ?>
-               <?php
                   //EXIBINDO OS POSTS
                   foreach ( $listaPosts as &$postAtual ) : 
                ?>
@@ -32,7 +30,8 @@
                         </span>
                         <img src="<?php the_field('blog-img', $postAtual)?>" alt="Imagem do blog">
                         <div class="nostrud">
-                           <h2><?php the_field('blog-content', $postAtual)?></h2>
+                           <h3><?php print $postAtual->post_title; ?></h3>
+                           <p><?php the_field('blog-content', $postAtual)?></p>
                            <a href="<?php print get_the_permalink( $postAtual->ID );?>" class="read_more">Leia mais</a>
                         </div>
                      </div>
