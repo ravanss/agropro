@@ -9,9 +9,9 @@ Author URI: https://plugin-planet.com/
 Donate link: https://monzillamedia.com/donate.html
 Contributors: specialk
 Requires at least: 4.9
-Tested up to: 5.9
-Stable tag: 2.6
-Version: 2.6
+Tested up to: 6.0
+Stable tag: 2.7
+Version: 2.7
 Requires PHP: 5.6.20
 Text Domain: disable-gutenberg
 Domain Path: /languages
@@ -232,7 +232,7 @@ Yes, you can install and activate Disable Gutenberg on any supported WordPress v
 Yes, if both plugins are active at the same time, Disable Gutenberg gives priority to Classic Editor plugin. So if you want to use Disable Gutenberg, deactivate the Classic Editor plugin (you do not have to remove it, just deactivate via the Plugins screen).
 
 
-**Classic Editor expires in 2022, what about Disable Gutenberg?**
+**Classic Editor planned to expire in 2022, what about Disable Gutenberg?**
 
 I can't make any promises, but I intend to develop with WordPress for the long-haul. Who knows what the future holds, but the plan is to keep Disable Gutenberg going for many years to come. Why? Because the original RTE/Visual Editor is awesome. I strongly feel it's one of the many reasons why WordPress has enjoyed its great success. I've been using the original/classic editor for over 10 years now and it's always been 100% smooth experience. I've tried Gutenberg, and yes it is much better now than in previous versions, but for me it's just not as comfortable or streamlined as the classic editor. So yeah, will do everything possible to keep Disable Gutenberg (and the Classic Editor) going well beyond 2022.
 
@@ -301,6 +301,14 @@ Thank you to everyone for using Disable Gutenberg and for all the [awesome 5-sta
 
 If you have any feedback or suggestions to make this plugin the absolute best it can be, and/or would like to help with development, please reach me via the [contact form](https://plugin-planet.com/support/#contact) at Plugin Planet.
 
+
+**2.7 (2022/05/15)**
+
+* Disable block widgets option now enabled by default
+* Disables new global `theme.json` styles on front end
+* Disables new hidden SVG block content on front end
+* Fixes bug with `disable_gutenberg_disable_post_type()`
+* Tests on WordPress 6.0
 
 **2.6 (2022/01/10)**
 

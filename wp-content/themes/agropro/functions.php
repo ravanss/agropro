@@ -30,10 +30,21 @@ function agropro_css()
     //Carregando os css
     wp_enqueue_style('agropro-css');
 }
-add_action('wp_enqueue_scripts', 'agropro_css')
+add_action('wp_enqueue_scripts', 'agropro_css');
 
 
+// Method 1: Filter.
+function my_acf_google_map_api( $api ){
+    $api['key'] = 'AIzaSyA-Nc8ofMpIdkG6TGBRNrnWlbovJJH9XeU';
+    return $api;
+}
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
+// Method 2: Setting.
+function my_acf_init() {
+    acf_update_setting('google_api_key', 'AIzaSyA-Nc8ofMpIdkG6TGBRNrnWlbovJJH9XeU');
+}
+add_action('acf/init', 'my_acf_init');
 
 
 
