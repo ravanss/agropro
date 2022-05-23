@@ -32,7 +32,21 @@ function agropro_css()
 }
 add_action('wp_enqueue_scripts', 'agropro_css');
 
+// Habilitando os menus do wordpress
+add_theme_support('menus');
 
+// Registro os menus do site
+ 
+function register_menus() {
+    register_nav_menus( array(
+        'header menu'=>'Menu principal',
+        'footer menu'=> 'Menu footer',
+    ));
+}
+add_action('init', 'register_menus');
+
+
+// GOOGLE MAPS APLICATION 
 // Method 1: Filter.
 function my_acf_google_map_api( $api ){
     $api['key'] = 'AIzaSyA-Nc8ofMpIdkG6TGBRNrnWlbovJJH9XeU';

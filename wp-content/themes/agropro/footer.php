@@ -15,14 +15,15 @@
                   <div class="col-lg-3 col-md-6">
                      <div class="hedingh3 text_align_left">
                         <h3> Explore</h3>
-                        <ul class="menu_footer">
-                           <li><a href="index.html">Home</a></li>
-                           <li><a href="about.html">About</a></li>
-                           <li><a href="service.html">Service</a></li>
-                           <li><a href="Javascript:void(0)">Projects</a></li>
-                           <li><a href="testimonail.html">Testimonail</a></li>
-                           <li><a href="contact.html">Contact us</a></li>
-                        </ul>
+                        <?php
+                              $args = array(
+                                 'menu' => 'Menu footer',
+                                 'theme_location' => 'footer menu',
+                                 'container' => false,
+                                 'menu_class' => 'menu_footer',
+                              );
+                              wp_nav_menu( $args );
+                           ?>
                      </div>
                   </div>
                   <div class="col-lg-3 col-md-6">

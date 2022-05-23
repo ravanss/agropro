@@ -43,27 +43,20 @@
                   <div class="col-md-8 col-sm-9">
                      <div class="navbar-area">
                         <nav class="site-navbar">
-                           <ul>
-                              <li><a class="active" href="index.html">Home</a></li>
-                              <li><a href="/cursos/agropro/about">About</a></li>
-                              <li><a href="/cursos/agropro/service">Service</a></li>
-                              <li><a href="/cursos/agropro/blog">Blog</a></li>
-                              <li><a href="/cursos/agropro/contact">Contact</a></li>
-                           </ul>
+                           <?php
+                              $args = array(
+                                 'menu' => 'Menu principal',
+                                 'theme_location' => 'header menu',
+                                 'container' => false,
+                                 'menu_class' => 'menu_header',
+                              );
+                              wp_nav_menu( $args );
+                           ?>
                            <button class="nav-toggler">
                            <span></span>
                            </button>
                         </nav>
                      </div>
-                  </div>
-                  <div class="col-md-2 padd_0 d_none">
-                     <ul class="email text_align_right">
-                        <li><a href="Javascript:void(0)">Login</a>
-                        </li>
-                        <li><a href="Javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i>
-                           </a>
-                        </li>
-                     </ul>
                   </div>
                </div>
             </div>
