@@ -36,7 +36,6 @@ add_action('wp_enqueue_scripts', 'agropro_css');
 add_theme_support('menus');
 
 // Registro os menus do site
- 
 function register_menus() {
     register_nav_menus( array(
         'header menu'=>'Menu principal',
@@ -45,6 +44,23 @@ function register_menus() {
 }
 add_action('init', 'register_menus');
 
+function register_opcoes() {
+
+	if( function_exists('acf_add_options_page') ) {
+		
+		acf_add_options_page(array(
+			'page_title' 	=> 'Opções adicionais',
+			'menu_title'	=> 'Opções adicionais',
+			'menu_slug' 	=> 'tema_adicionais',
+			'capability'	=> 'edit_posts',
+			'redirect'		=> false,
+		));
+		
+	}
+	
+}
+
+add_action( 'after_setup_theme', 'register_opcoes' );
 
 // GOOGLE MAPS APLICATION 
 // Method 1: Filter.

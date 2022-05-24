@@ -973,14 +973,9 @@ ul.email li i {
     padding: 20px;
 }
 
-
 /** end contact  **/
 
-
-
-
 /** footer **/
-
 .footer {
     padding-top: 70px;
     background: #252525;
@@ -1046,11 +1041,14 @@ ul.menu_footer li a:hover {
     font-weight: normal;
     line-height: 59px;
     height: 59px;
-    max-width: 70px;
-    width: 100%;
     display: block;
-    border:inherit;
-    border-radius:0px;
+    border: inherit;
+    border-radius: 0px;
+    background-image: url('images/new.png');
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    padding: 0px 40px;
+    width: auto;
 }
 
 .subsci_btn:hover {
@@ -1065,6 +1063,10 @@ ul.menu_footer li a:hover {
 
 ul.recent li {
     display: flex;
+    margin-bottom: 15px;
+}
+
+ul.recent li span{
     color: #fff;
     font-size: 15px;
     line-height: 20px;
