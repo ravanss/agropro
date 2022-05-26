@@ -615,7 +615,7 @@ ul.email li i {
 
 .about {
     background: #fff;
-    padding: 100px 0 60px;
+    padding: 120px 0 60px;
 }
 
 
@@ -658,7 +658,8 @@ ul.email li i {
 
 .services {
     background: #fff;
-    padding-top: 90px;
+    padding-top: 120px;
+    padding-bottom: 40px;
 }
 
 .services .titlepage {
@@ -838,7 +839,8 @@ ul.email li i {
 
 .news {
     background: #fff;
-    padding-top: 90px;
+    padding-top: 120px;
+    padding-bottom: 40px;
 }
 
 .news .titlepage {padding-bottom: 20px;}
@@ -911,7 +913,8 @@ ul.email li i {
 
 .contact {
     background: #fff;
-    padding-top: 90px;
+    padding-top: 120px;
+    
 }
 
 .map-responsive {margin-top: 90px;}

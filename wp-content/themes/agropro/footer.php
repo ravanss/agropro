@@ -69,13 +69,13 @@
                <div class="container">
                   <div class="row d_flex">
                      <div class="col-md-8">
-                        <p>© 2022 All Rights Reserved. Design by <a href="https://html.design/"> Free html Templates</a></p>
+                        <p>© <?php echo date( 'Y' ); ?> Todos os direitos reservados. Desenvolvido por <a href="https://github.com/ravanss">Saulo Pedro</a></p>
                      </div>
                      <div class="col-md-4">
                         <ul class="social_icon ">
-                           <li><a href="Javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                           <li><a href="Javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                           <li><a href="Javascript:void(0)"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                           <?php if (have_rows('footer_icons', 'option')) : while(have_rows('footer_icons', 'option')) : the_row();?>
+                              <li><a href="<?php the_sub_field('footer-link', 'option')?>"><i class="<?php the_sub_field('footer-icon', 'option')?>" aria-hidden="true"></i></a></li>
+                           <?php endwhile; else: endif;?>         
                         </ul>
                      </div>
                   </div>
