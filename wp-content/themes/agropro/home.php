@@ -35,7 +35,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div style="padding: 40px 0;">
+                            <div class="post-nav">
                                 <?php next_posts_link('posts mais antigos');?>
                                 <?php previous_posts_link('Posts  novos');?>
                             </div>
