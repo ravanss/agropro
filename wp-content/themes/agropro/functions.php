@@ -10,8 +10,10 @@ function agropro_script()
     wp_register_script('niceCountryInput', get_template_directory_uri() . '/js/niceCountryInput.js', array(), null, true);
     wp_register_script('owl.carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', array(), null, true);
     wp_register_script('custom', get_template_directory_uri() . '/js/custom.js', array(), null, true);
+    wp_enqueue_script( 'jqueryzao', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js', array('jquery'), '3.3.0', true );
 
     //Carregando os js
+    wp_enqueue_script('jqueryzao');
     wp_enqueue_script('bootstrap-datepicker');
     wp_enqueue_script('bootstrap.bundle');
     wp_enqueue_script('bootstrap');

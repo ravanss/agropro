@@ -13,14 +13,14 @@
                      <div class="hedingh3 text_align_left">
                         <h3> Explore</h3>
                         <?php
-                              $args = array(
-                                 'menu' => 'Menu footer',
-                                 'theme_location' => 'footer menu',
-                                 'container' => false,
-                                 'menu_class' => 'menu_footer',
-                              );
-                              wp_nav_menu( $args );
-                           ?>
+                           $args = array(
+                              'menu' => 'Menu footer',
+                              'theme_location' => 'footer menu',
+                              'container' => false,
+                              'menu_class' => 'menu_footer',
+                           );
+                           wp_nav_menu( $args );
+                        ?>
                      </div>
                   </div>
                   <div class="col-lg-3 col-md-6">
