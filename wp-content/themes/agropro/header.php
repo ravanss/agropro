@@ -25,10 +25,12 @@
    </head>
    <!-- body -->
    <body class="main-layout">
-      <!-- loader  
-      <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
-      </div>
+      <!-- loader --> 
+      <?php if(is_page('Home')) {?>
+         <div class="loader_bg">
+            <div class="loader"><img src="<?php echo get_template_directory_uri();?>/images/loading.gif" alt="#"/></div>
+         </div>
+      <?php } ?>
       <!-- end loader -->
       <div class="full_bg">
          <!-- header -->
